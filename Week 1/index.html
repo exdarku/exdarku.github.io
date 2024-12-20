@@ -7,50 +7,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        .inter-500 {
-        font-family: "Inter", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 500;
-        font-style: normal;
-        }
-
-        body {
-            display: flex;
-            justify-content: center;
-            height: 100vh;
-            align-items: center;
-            background-color: #1f1f1f;
-            color: #efefef;
-            font-size: 30px;
-        }
-
-        img {
-            padding-left: 20px;
-            width: 100px;
-            mix-blend-mode: screen;
-            filter: invert(100%) grayscale(100%);
-        }
-
-        a {
-            text-decoration: none;
-            color: #959595;
-        }
-
-        a:hover{
-            color: #00d2dd;
-            transition: 0.3s ease;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 class="inter-500">Hi! I am <a href="https://github.com/exdarku">Laurence.</a></h1>
-    <a href="https://www.flaticon.com/free-animated-icons/rocket" title="rocket animated icons"><img src="rocket.gif" alt=""></a>
+    <main>
+        <section class="hero">
+            <h1 class="inter-600">Hi! I am <a href="https://github.com/exdarku" class="hero-name">Laurence.</a></h1>
+            <a href="https://www.flaticon.com/free-animated-icons/rocket" title="rocket animated icons"><img class="rocket" src="rocket.gif" alt=""></a>
+        </section>
+        <div class="html-tasks">
+            <h2 class="inter-500">HTML Tasks:</h2>
+            <div class="html-tasks-cards">
+                <div class="task-card">
+                    <a href="/ExplorePHTours/LesmorasExplorePHTours.html">
+                        <img src="assets/first-task.png" alt="">
+                        <p class="inter-400">Week 1</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
