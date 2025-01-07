@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #1e1e1e;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+}
+th {
+    background-color: #f2f2f2;
+}
+.break {
+    background-color: #ddd;
+    font-weight: bold;
+}
+.activity {
+    font-weight: bold;
+}
+
+.center {
+    display: flex;
+    text-align: center;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center-container {
+    background-color: #dfdfdf;
+    padding: 10%;
+    border-radius: 20px;
+}
