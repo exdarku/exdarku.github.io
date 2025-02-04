@@ -1,82 +1,254 @@
 * {
-    margin: 0;
-    padding: 0;
-    color: #e7e7e7;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
-
 
 body {
-    background-color: #2a2a2a;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #F6F6F6;
+    background-color: #0D0D0D;
 }
 
-main {
+#myPicture {
+    width: 12rem;
+    border-radius: 100%;
+}
+
+header {
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+}
+
+header li {
+    margin: 0 2rem;
+    font-size: 1rem;
+}
+
+header a {
+    text-decoration: none;
+    color: #F6F6F6;
+    font-weight: 700;
+}
+
+header a:hover {
+    color: #e6ff0a;
+    transition: 0.3s ease;
+}
+
+.home {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     height: 100vh;
-    justify-content: center;
 }
 
-.hero {
+.home-content {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
-.hero h1 {
+.home-content h1 {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    margin-bottom: -0.5rem;
+}
+
+.home-content h2 {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.home-content p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #AAAAAA;
+}
+
+.home-content-text {
+    width: 40rem;
+}
+
+#projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+
+}
+
+.projectsText {
+    font-size: 1.4rem;
+    margin-right: 46rem;
+}
+
+.projectCards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projectCard {
+    background-color: #262626;
+    width: 14rem;
+    padding: 1rem;
+    margin-right: 1rem;
+    border-radius: 10px;
+    position: relative;
+    z-index: 0;
+    color: white; 
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+/* Common animated border */
+.projectCard::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background-size: 300% 300%;
+    z-index: -2;
+    border-radius: 15px;
+    animation: moveBorder 4s linear infinite;
+}
+
+/* Mask to preserve only the border effect */
+.projectCard::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    background-color: #262626;
+    border-radius: 8px;
+    z-index: -1;
+}
+
+/* Unique animated gradients for each card */
+.krypto::before {
+    background: linear-gradient(90deg, 
+        #00ffcc, #00ccff, #0099ff, #0066ff, #00ccff, #00ffcc
+    );
+    animation: moveBorder 5s linear infinite;
+}
+
+.aidvocate::before {
+    background: linear-gradient(90deg, 
+        #ff00ff, #cc00ff, #9900ff, #6600ff, #cc00ff, #ff00ff
+    );
+    animation: moveBorder 5s linear infinite;
+}
+
+.project-ocp::before {
+    background: linear-gradient(90deg, 
+        #ffff00, #ffcc00, #ff9900, #ffcc00, #ffff00, #ffcc00
+    );
+    animation: moveBorder 5s linear infinite;
+}
+
+/* Gradient animation */
+@keyframes moveBorder {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.projectCard:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+
+
+.projectCard h2 {
+    margin-bottom: -1rem;
+    margin-top: 7rem;
+    margin-left: 0.3rem;
+}
+
+.projectCard p {
+    margin-left: 0.3rem;
+    color: #BCBCBC;
+}
+
+#about-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+#about-me p {
+    width: 50.5rem;
+    color: #BCBCBC;
+    text-align: justify
+}
+
+.aboutMeText {
+    font-size: 1.4rem;
+    margin-right: 44rem;
+    margin-bottom: -0.5rem;
+}
+
+#about-me strong {
+    font-weight: 700;
+    color: #D4D4D4;
+}
+
+#about-me a {
+    color: #f7f7f7;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#about-me a:hover {
+    color: #0aff70;
+    transition: 0.3s ease;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+footer h2 {
     margin-top: auto;
     margin-bottom: auto;
-    font-size: 5em;
+    margin-right: 32rem;
 }
 
-.hero img {
-    margin-left: 1rem;
-    mix-blend-mode: screen;
-    filter: invert(100%) grayscale(100%);
-    width: 10rem;
+.github-logo {
+    width: 3rem;
+    filter: invert(1);
+    margin-right: 2rem;
 }
 
-.html-tasks .html-tasks-cards img {
-    width: 15rem;
-}
-
-.hero-name:hover {
-    transition: 0.3s ease-in-out;
-    color: #00ffd5;
-}
-
-.html-tasks {
-    margin-right: 35em;
-}
-
-.html-tasks-cards {
-    display: flex;
-}
-
-.html-tasks h2 {
-    margin-bottom: 1rem;
-}
-
-.task-card {
-    position: relative;
-    transition: transform 0.3s ease;
-    margin-left: 20px;
-}
-
-.task-card img{
-    height: max;
-}
-
-.task-card:hover {
-    transform: scale(1.1);
-}
-
-.task-card p {
-    position: absolute;
-    top: 85%;
-    left: 20%;
-    transform: translate(-50%, -50%);
-    font-size: 1.1rem;
-}
-
-.task-card img {
-    filter: brightness(50%);
+.linkedin-logo {
+    width: 3rem;
+    background-color: #ffffff;
+    border-radius: 15%;
 }
