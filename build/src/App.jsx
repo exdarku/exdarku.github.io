@@ -100,7 +100,7 @@ const App = () => {
     },
     {
       id: 2,
-      title: 'BAGANi Endurance Rally System',
+      title: 'BAGANI Endurance Rally System',
       description: 'A full-stack endurance event system for motorcycle riders to register, pay, get updates, and interact—built with React, Node.js, Express, MySQL, and AWS.',
       fullDescription: 'BAGANI Motorcycle Endurance System is a comprehensive platform designed for motorcycle endurance events. It allows participants to seamlessly register for events, process secure payments, receive real-time updates, and engage with fellow riders through interactive features. Built with a robust tech stack including React, Node.js, Express, MySQL, and AWS, the system ensures performance, reliability, and scalability for large-scale events.',
       images: [
@@ -109,7 +109,7 @@ const App = () => {
       date: '2025',
       technologies: ['React', 'NodeJS', 'Express', 'Passport', 'Docker', 'MySQL', 'Amazon Web Services (AWS) EC2'],
       github: null,
-      demo: null,
+      demo: "https://baganiendurally.com",
       gradient: 'from-cyan-400 via-blue-500 to-blue-600'
     },
     {
@@ -350,7 +350,7 @@ const App = () => {
                 Laurence Lesmoras
               </h1>
               <h2 className="text-lg md:text-xl mb-6 text-gray-300">
-                Chief Executive Officer at <strong className="font-bold text-white">MMDSC</strong>
+                Second year Computer Science at <strong className="font-bold text-white">Mapúa Malayan Colleges of Mindanao</strong>
               </h2>
               <p className="text-base md:text-lg text-gray-400 leading-relaxed">
                 Bringing business ideas to life. Empowering students 
